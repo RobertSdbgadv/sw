@@ -1,0 +1,369 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local d = Instance.new("ScreenGui")
+local CoordsFinderV3 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local UISizeConstraint = Instance.new("UISizeConstraint")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local Frame = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local UISizeConstraint_2 = Instance.new("UISizeConstraint")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local UISizeConstraint_3 = Instance.new("UISizeConstraint")
+local UICorner_7 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+d.Name = "d"
+d.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+d.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+d.ResetOnSpawn = false
+
+CoordsFinderV3.Name = "Coords Finder V3"
+CoordsFinderV3.Parent = d
+CoordsFinderV3.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+CoordsFinderV3.Position = UDim2.new(0.0127289891, 0, 0.793269217, 0)
+CoordsFinderV3.Size = UDim2.new(0, 388, 0, 159)
+
+UICorner.Parent = CoordsFinderV3
+
+TextLabel.Parent = CoordsFinderV3
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.570300281, 0, 0.561886191, 0)
+TextLabel.Size = UDim2.new(0, 128, 0, 29)
+TextLabel.Font = Enum.Font.Kalam
+TextLabel.Text = "Position: "
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = CoordsFinderV3
+TextButton.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton.BorderColor3 = Color3.fromRGB(76, 76, 76)
+TextButton.Position = UDim2.new(0.0668542981, 0, 0.268515527, 0)
+TextButton.Size = UDim2.new(0, 143, 0, 29)
+TextButton.Font = Enum.Font.Kalam
+TextButton.Text = "Copy position"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_2.Parent = TextButton
+
+TextButton_2.Parent = CoordsFinderV3
+TextButton_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_2.BorderColor3 = Color3.fromRGB(76, 76, 76)
+TextButton_2.Position = UDim2.new(0.5703004, 0, 0.266790032, 0)
+TextButton_2.Size = UDim2.new(0, 128, 0, 30)
+TextButton_2.Font = Enum.Font.Kalam
+TextButton_2.Text = "Generate Tween scirpt"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_3.Parent = TextButton_2
+
+TextButton_3.Parent = CoordsFinderV3
+TextButton_3.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextButton_3.BorderColor3 = Color3.fromRGB(76, 76, 76)
+TextButton_3.Position = UDim2.new(0.0651456788, 0, 0.555385768, 0)
+TextButton_3.Size = UDim2.new(0, 143, 0, 31)
+TextButton_3.Font = Enum.Font.Kalam
+TextButton_3.Text = "Generate TP Script"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+UICorner_4.Parent = TextButton_3
+
+TextLabel_2.Parent = CoordsFinderV3
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.000568504503, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 142, 0, 29)
+TextLabel_2.Font = Enum.Font.Kalam
+TextLabel_2.Text = "Coords Finder"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = CoordsFinderV3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.182421178, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 142, 0, 29)
+TextLabel_3.Font = Enum.Font.Kalam
+TextLabel_3.Text = "V"
+TextLabel_3.TextColor3 = Color3.fromRGB(235, 255, 254)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+UIGradient.Parent = TextLabel_3
+
+UISizeConstraint.Parent = TextLabel_3
+
+UICorner_5.Parent = TextLabel_3
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(238, 238, 238)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(238, 238, 238))}
+UIGradient_2.Parent = CoordsFinderV3
+
+Frame.Parent = CoordsFinderV3
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.700
+Frame.Position = UDim2.new(0.138221666, 0, -0.532036304, 0)
+Frame.Size = UDim2.new(0, 279, 0, 73)
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(-0.200226605, 0, 0.272346795, 0)
+TextLabel_4.Size = UDim2.new(0, 216, 0, 15)
+TextLabel_4.Font = Enum.Font.Kalam
+TextLabel_4.Text = "Water Mark"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UICorner_6.Parent = Frame
+
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(-0.200088754, 0, -0.0130068026, 0)
+TextLabel_5.Size = UDim2.new(0, 207, 0, 25)
+TextLabel_5.Font = Enum.Font.Unknown
+TextLabel_5.Text = "Source Ware"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+UISizeConstraint_2.Parent = Frame
+
+UITextSizeConstraint.Parent = Frame
+
+TextLabel_6.Parent = Frame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(6.75980773e-05, 0, 0.723353565, 0)
+TextLabel_6.Size = UDim2.new(0, 277, 0, 20)
+TextLabel_6.Font = Enum.Font.Kalam
+TextLabel_6.Text = "Collabaration with Taxi Content ❤"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = Frame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.27219975, 0, 0.0721545219, 0)
+TextLabel_7.Size = UDim2.new(0, 216, 0, 15)
+TextLabel_7.Font = Enum.Font.Kalam
+TextLabel_7.Text = "More Scripts:"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = Frame
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.370108664, 0, 0.213707507, 0)
+TextLabel_8.Size = UDim2.new(0, 165, 0, 22)
+TextLabel_8.Font = Enum.Font.Gotham
+TextLabel_8.Text = "https://taxi-content.xyz/scripts"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+TextLabel_9.Parent = CoordsFinderV3
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.205617055, 0, 0, 0)
+TextLabel_9.Size = UDim2.new(0, 142, 0, 29)
+TextLabel_9.Font = Enum.Font.Kalam
+TextLabel_9.Text = "3"
+TextLabel_9.TextColor3 = Color3.fromRGB(235, 255, 254)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+UISizeConstraint_3.Parent = TextLabel_9
+
+UICorner_7.Parent = TextLabel_9
+
+TextButton_4.Parent = CoordsFinderV3
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_4.BorderColor3 = Color3.fromRGB(76, 76, 76)
+TextButton_4.Position = UDim2.new(0.97751689, 0, -0.07912191, 0)
+TextButton_4.Size = UDim2.new(0, 22, 0, 22)
+TextButton_4.Font = Enum.Font.Kalam
+TextButton_4.Text = "X"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+UICorner_8.Parent = TextButton_4
+
+-- Scripts:
+
+local function THNUIH_fake_script() -- TextLabel.Script 
+	local script = Instance.new('Script', TextLabel)
+
+	while task.wait() do
+		script.Parent.Text = "Position : " ..tostring(math.floor(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X))..", "..tostring(math.floor(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y))..", "..tostring(math.floor(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z))
+	end
+	
+end
+coroutine.wrap(THNUIH_fake_script)()
+local function RDSHID_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	function Clicked() 
+		setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
+		script.Parent.Text = "Copied to clipboard!"
+		task.wait(3)
+		script.Parent.Text = "Generate Tween scirpt"
+	end
+	
+	script.Parent.MouseButton1Down:connect(Clicked)
+end
+coroutine.wrap(RDSHID_fake_script)()
+local function GBCRQL_fake_script() -- TextButton_2.Script 
+	local script = Instance.new('Script', TextButton_2)
+
+	function Clicked() 
+		local e = tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+		setclipboard('local f = 0.5 -- Time\n\n\n\ntweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(f, Enum.EasingStyle.Linear)\ntweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new('..e..')}):Play()')
+		script.Parent.Text = "Copied to clipboard!"
+		task.wait(3)
+		script.Parent.Text = "Generate Tween scirpt"
+	end
+	
+	script.Parent.MouseButton1Down:connect(Clicked)
+end
+coroutine.wrap(GBCRQL_fake_script)()
+local function KTTZK_fake_script() -- TextButton_3.Script 
+	local script = Instance.new('Script', TextButton_3)
+
+	function Clicked() 
+		e=tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+		setclipboard("game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new("..e..")")
+		script.Parent.Text = "Copied to clipboard!"
+		task.wait(3)
+		script.Parent.Text = "Generate TP Script"
+	
+	end
+	script.Parent.MouseButton1Down:connect(Clicked)
+end
+coroutine.wrap(KTTZK_fake_script)()
+local function OVOVCFQ_fake_script() -- TextLabel_9.Script 
+	local script = Instance.new('Script', TextLabel_9)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(OVOVCFQ_fake_script)()
+local function MRGSD_fake_script() -- TextButton_4.Script 
+	local script = Instance.new('Script', TextButton_4)
+
+	function Clicked() 
+		script.Parent.Parent.Parent.Parent.ScreenGui:Destroy()
+	end
+	
+	script.Parent.MouseButton1Down:connect(Clicked)
+end
+coroutine.wrap(MRGSD_fake_script)()
+local function RRWDSZS_fake_script() -- CoordsFinderV3.Script 
+	local script = Instance.new('Script', CoordsFinderV3)
+
+	frame = script.Parent.Frame
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+end
+coroutine.wrap(RRWDSZS_fake_script)()
