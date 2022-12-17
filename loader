@@ -1,1 +1,9 @@
-print("Welcome!")
+if getgenv().universalcode ~= nil then
+    if getgenv().universalcode == "coords" then
+        ptint("code")
+    elseif getgenv().universalcode == "antiafk" then
+        print("bebra")
+    end
+end
+
+print('welcome')
